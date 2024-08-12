@@ -1,161 +1,167 @@
 body {
-         background-color: #111826ff;  /* Cor de fundo bonita e suave */
+         background-color: #111826ff;
+         /* Cor de fundo bonita e suave */
          font-family: Arial, sans-serif;
          display: flex;
          justify-content: center;
          align-items: center;
-         min-height: 100vh; /* Usa altura mínima em vez de altura fixa */
+         min-height: 100vh;
+         /* Usa altura mínima em vez de altura fixa */
          margin: 0;
-     }
-     
-     .container {
+}
+
+.container {
          padding: 20px;
          max-width: 100%;
-     }
-     
-     .card-img-top {
+}
+
+.card-img-top {
          border-radius: 16px;
          width: 100%;
-         height: auto; /* Mantém a altura proporcional */
-     }
-     
-     .content-a .card-img-top {
+         height: auto;
+         /* Mantém a altura proporcional */
+}
+
+.content-a .card-img-top {
          box-shadow:
-             -8px 0px 5px rgba(89, 12, 40, 0.7), /* Sombra à esquerda com cor 1 */
-             8px 0px 5px rgba(25, 23, 145, 0.5); /* Sombra à direita com cor 2 */
-     }
-     
-     .content-b .card-img-top {
+                  -8px 0px 5px rgba(89, 12, 40, 0.7),
+                  /* Sombra à esquerda com cor 1 */
+                  8px 0px 5px rgba(25, 23, 145, 0.5);
+         /* Sombra à direita com cor 2 */
+}
+
+.content-b .card-img-top {
          box-shadow: 0px 2px 5px rgba(242, 242, 242, 90);
-     }
-     
-     .content-c .card-img-top {
+}
+
+.content-c .card-img-top {
          box-shadow: 0px 2px 5px rgba(108, 174, 224, 90);
-     }
-     
-     .main-container {
-         background-color: rgba(228, 230, 235, 0.071); /* Cor de fundo branca para o container */
+}
+
+.main-container {
+         background-color: rgba(228, 230, 235, 0.071);
+         /* Cor de fundo branca para o container */
          border-radius: 15px;
          box-shadow: 0px 4px 8px rgba(26, 24, 150, 90);
          padding: 20px;
          width: 90%;
-         max-width: 990px; /* Ajusta a largura máxima */
+         max-width: 990px;
+         /* Ajusta a largura máxima */
          text-align: center;
-         margin: 0 auto; /* Garante que o container esteja centralizado */
-     }
-     
-     h1, h2, h3 {
+         margin: 0 auto;
+         /* Garante que o container esteja centralizado */
+}
+
+h1,
+h2,
+h3 {
          color: #586169;
          margin: 10px;
-         word-wrap: break-word; /* Quebra o texto automaticamente se for muito longo */
-     }
-     
-     .drag-info {
+         word-wrap: break-word;
+         /* Quebra o texto automaticamente se for muito longo */
+}
+
+.drag-info {
          display: block;
          font-size: 0.9rem;
          margin-top: 10px;
          margin-bottom: -50px;
-         color: #586169;  /* Cor padrão para manter a consistência */
-     }
-     
-     /* Mobile responsivity */
-     @media (max-width: 768px) {
+         color: #586169;
+         /* Cor padrão para manter a consistência */
+}
+
+/* Mobile responsivity */
+@media (max-width: 768px) {
          body {
-             flex-direction: column; /* Exibe em formato vertical */
-             padding: 10px;
+                  flex-direction: column;
+                  /* Exibe em formato vertical */
+                  padding: 10px;
          }
-     
+
          h1 {
-             font-size: 1.5rem;
-             line-height: 0.2; /* Ajusta a altura da linha para não cortar o texto */
-             margin: 10px; /* Ajusta as margens para ocupar menos espaço vertical */
-             padding-bottom: 4px;
+                  font-size: 1.5rem;
+                  line-height: 0.2;
+                  /* Ajusta a altura da linha para não cortar o texto */
+                  margin: 10px;
+                  /* Ajusta as margens para ocupar menos espaço vertical */
+                  padding-bottom: 4px;
          }
-     
+
          h2 {
-             font-size: 1.2rem;
+                  font-size: 1.2rem;
          }
-     
-         h3 {
-             font-size: 1.0rem;
-         }
-     
+
          .card {
-             padding: 10px;
-             width: 100%;  /* Ajusta o card para ocupar toda a largura disponível em telas menores */
-             height: auto;  /* Permite que a altura seja ajustada conforme o conteúdo */
+                  padding: 10px;
+                  width: 100%;
+                  /* Ajusta o card para ocupar toda a largura disponível em telas menores */
+                  height: auto;
+                  /* Permite que a altura seja ajustada conforme o conteúdo */
          }
-     
+
          .card-img-top {
-             height: auto;  /* Mantém a altura da imagem proporcional à largura */
-             max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+                  height: auto;
+                  /* Mantém a altura da imagem proporcional à largura */
+                  max-width: 100%;
+                  /* Garante que a imagem não exceda a largura do container */
          }
-         .main-container{
+
+         .main-container {
                   margin: 0 auto;
          }
-     }
-     
-     @media (max-width: 480px) {
-         h1 {
-             font-size: 1.2rem;
-             margin: 5px; /* Reduz as margens para telas muito pequenas */
-             padding-bottom: 4px;
-         }
-     
-         h2 {
-             font-size: 1.0rem;
-         }
-         h3 {
-             font-size: 0.9rem;
-         }
-     
-         .main-container {
-             padding: 10px;
-             width: 100%;
-         }
-     }
+}
 
-     @media (max-width: 320px) {
-         .main-container {
-             padding: 5px;
-         }
-     
-         .card-img-top {
-             width: 100%;
-             height: auto;
-         }
-     
-         .drag-info {
-             font-size: 0.8rem;
-         }
-     
+@media (max-width: 480px) {
          h1 {
-             font-size: 1rem;
+                  display: none;
          }
-     
+
          h2 {
-             font-size: 0.8rem;
+                  display: none;
          }
-     
-         h3 {
-             font-size: 0.7rem;
-         }
-     }
-     
-     @media (max-height: 500px) {
-         body {
-             align-items: flex-start; /* Alinha o conteúdo ao topo em telas com pouca altura */
-             padding-top: 10px;
-         }
-     
-         h1 {
-             font-size: 1.2rem;
-             margin: 1px 0; /* Reduz as margens em dispositivos com pouca altura */
-         }
-     
+
          .main-container {
-             padding: 10px;
-             width: 100%;
+                  padding: 10px;
+                  width: 100%;
          }
-     }
-     
+}
+
+@media (max-width: 320px) {
+         .main-container {
+                  padding: 5px;
+         }
+
+         .card-img-top {
+                  width: 100%;
+                  height: auto;
+         }
+
+         .drag-info {
+                  font-size: 0.8rem;
+         }
+
+         h1 {
+                  display: none;
+         }
+
+         h2 {
+                  display: none;
+         }
+}
+
+@media (max-height: 500px) {
+         body {
+                  align-items: flex-start;
+                  /* Alinha o conteúdo ao topo em telas com pouca altura */
+                  padding-top: 10px;
+         }
+
+         h1 {
+                  display: none;
+         }
+
+         .main-container {
+                  padding: 10px;
+                  width: 100%;
+         }
+}
