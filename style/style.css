@@ -4,16 +4,19 @@ body {
          display: flex;
          justify-content: center;
          align-items: center;
-         height: 100vh;
+         min-height: 100vh; /* Usa altura mínima em vez de altura fixa */
          margin: 0;
      }
      
      .container {
          padding: 20px;
+         max-width: 100%;
      }
      
      .card-img-top {
          border-radius: 16px;
+         width: 100%;
+         height: auto; /* Mantém a altura proporcional */
      }
      
      .content-a .card-img-top {
@@ -43,7 +46,8 @@ body {
      
      h1, h2, h3 {
          color: #586169;
-         margin: 10px 10px 10px 10px;
+         margin: 10px;
+         word-wrap: break-word; /* Quebra o texto automaticamente se for muito longo */
      }
      
      .drag-info {
@@ -54,7 +58,17 @@ body {
      }
      
      @media (max-width: 768px) {
-         h1, h2, h3 {
+         h1 {
+             font-size: 1.5rem;
+             line-height: 1.2; /* Ajusta a altura da linha para não cortar o texto */
+             margin: 10px 0; /* Ajusta as margens para ocupar menos espaço vertical */
+         }
+     
+         h2 {
+             font-size: 1.2rem;
+         }
+     
+         h3 {
              font-size: 1.0rem;
          }
      
@@ -69,8 +83,45 @@ body {
          }
      
          .card-img-top {
-             height: 120px;
-             width: auto;  /* Ajusta a largura da imagem para manter a proporção */
+             height: auto;  /* Mantém a altura da imagem proporcional à largura */
+             max-width: 100%; /* Garante que a imagem não exceda a largura do container */
+         }
+     }
+     
+     @media (max-width: 480px) {
+         h1 {
+             font-size: 1.2rem;
+             margin: 5px 0; /* Reduz as margens para telas muito pequenas */
+         }
+     
+         h2 {
+             font-size: 1.0rem;
+         }
+     
+         h3 {
+             font-size: 0.9rem;
+         }
+     
+         .main-container {
+             padding: 10px;
+             width: 100%;
+         }
+     }
+     
+     @media (max-height: 500px) {
+         body {
+             align-items: flex-start; /* Alinha o conteúdo ao topo em telas com pouca altura */
+             padding-top: 10px;
+         }
+     
+         h1 {
+             font-size: 1.2rem;
+             margin: 5px 0; /* Reduz as margens em dispositivos com pouca altura */
+         }
+     
+         .main-container {
+             padding: 10px;
+             width: 100%;
          }
      }
      
