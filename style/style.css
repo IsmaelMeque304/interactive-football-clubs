@@ -111,6 +111,8 @@ body {
          .main-container {
              padding: 5px; /* Reduz o padding do container */
              width: 100%; /* Garante que o container use toda a largura disponível */
+             margin-top: 10px; /* Ajusta a margem superior para elevar o container */
+             margin-bottom: 10px; /* Ajusta a margem inferior para evitar cortar o conteúdo */
          }
      
          .card-img-top {
@@ -129,7 +131,17 @@ body {
          .container {
              padding: 2px; /* Reduz o padding da container */
          }
+     
+         body {
+             padding: 0; /* Remove o padding do body para permitir mais espaço para o container */
+             margin: 0; /* Remove o margin do body */
+             display: flex;
+             flex-direction: column;
+             justify-content: flex-start; /* Alinha o conteúdo ao topo */
+             align-items: center;
+         }
      }
+     
      
      
      
