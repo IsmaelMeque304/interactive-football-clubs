@@ -97,13 +97,14 @@ body {
      
      @media (max-width: 480px) {
          h1 {
-                  display: none;
+             font-size: 1.2rem;
+             margin: 5px; /* Reduz as margens para telas muito pequenas */
+             padding-bottom: 4px;
          }
      
          h2 {
              font-size: 1.0rem;
          }
-     
          h3 {
              font-size: 0.9rem;
          }
@@ -111,6 +112,33 @@ body {
          .main-container {
              padding: 10px;
              width: 100%;
+         }
+     }
+
+     @media (max-width: 320px) {
+         .main-container {
+             padding: 5px;
+         }
+     
+         .card-img-top {
+             width: 100%;
+             height: auto;
+         }
+     
+         .drag-info {
+             font-size: 0.8rem;
+         }
+     
+         h1 {
+             font-size: 1rem;
+         }
+     
+         h2 {
+             font-size: 0.8rem;
+         }
+     
+         h3 {
+             font-size: 0.7rem;
          }
      }
      
