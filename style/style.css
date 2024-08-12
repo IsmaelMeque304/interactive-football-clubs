@@ -101,11 +101,11 @@ body {
          }
      
          h2 {
-             font-size: 0.9rem; /* Reduz ainda mais o tamanho da fonte do h2 */
+             font-size: 0.8rem; /* Reduz o tamanho da fonte do h2 ainda mais */
          }
      
          h3 {
-             font-size: 0.8rem; /* Reduz ainda mais o tamanho da fonte do h3 */
+             font-size: 0.7rem; /* Reduz o tamanho da fonte do h3 ainda mais */
          }
      
          .main-container {
@@ -114,8 +114,8 @@ body {
          }
      
          .card-img-top {
-             max-width: 70%; /* Reduz a largura máxima da imagem */
-             max-height: 120px; /* Reduz a altura máxima da imagem */
+             max-width: 60%; /* Reduz a largura máxima da imagem */
+             max-height: 100px; /* Reduz a altura máxima da imagem */
              width: auto; /* Mantém a largura proporcional */
              height: auto; /* Mantém a altura proporcional */
          }
@@ -123,13 +123,14 @@ body {
          .content-a,
          .content-b,
          .content-c {
-             margin-bottom: 5px; /* Reduz ainda mais o espaço entre os cards */
+             margin-bottom: 2px; /* Reduz o espaço entre os cards ainda mais */
          }
      
          .container {
              padding: 2px; /* Reduz o padding da container */
          }
      }
+     
      
      
 
