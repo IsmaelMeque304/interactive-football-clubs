@@ -101,21 +101,21 @@ body {
          }
      
          h2 {
-             font-size: 1.0rem; /* Reduz o tamanho da fonte do h2 */
+             font-size: 0.9rem; /* Reduz ainda mais o tamanho da fonte do h2 */
          }
      
          h3 {
-             font-size: 0.9rem; /* Reduz o tamanho da fonte do h3 */
+             font-size: 0.8rem; /* Reduz ainda mais o tamanho da fonte do h3 */
          }
      
          .main-container {
-             padding: 10px; /* Reduz o padding do container */
+             padding: 5px; /* Reduz o padding do container */
              width: 100%; /* Garante que o container use toda a largura disponível */
          }
      
          .card-img-top {
-             max-width: 80%; /* Ajusta a largura máxima da imagem */
-             max-height: 150px; /* Ajusta a altura máxima da imagem */
+             max-width: 70%; /* Reduz a largura máxima da imagem */
+             max-height: 120px; /* Reduz a altura máxima da imagem */
              width: auto; /* Mantém a largura proporcional */
              height: auto; /* Mantém a altura proporcional */
          }
@@ -123,9 +123,14 @@ body {
          .content-a,
          .content-b,
          .content-c {
-             margin-bottom: 10px; /* Reduz o espaço entre os cards */
+             margin-bottom: 5px; /* Reduz ainda mais o espaço entre os cards */
+         }
+     
+         .container {
+             padding: 2px; /* Reduz o padding da container */
          }
      }
+     
      
 
      @media (max-width: 320px) {
