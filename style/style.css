@@ -97,9 +97,7 @@ body {
      
      @media (max-width: 480px) {
          h1 {
-             font-size: 1.2rem;
-             margin: 5px; /* Reduz as margens para telas muito pequenas */
-             padding-bottom: 4px;
+                  display: none;
          }
      
          h2 {
